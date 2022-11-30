@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
   <style>
     img {
         height: 65px;
     }
+    @media (#theme: dark){
+        body{
+          background-color: black;
+        }
+    } 
 
     td,
     th {
@@ -21,12 +28,17 @@
     }
 
     tr:nth-child(even) {
-        background-color: #eee; 
+        background-color: #696969; 
+        color: white;
+    }
+    tr:nth-child(odd) {
+        background-color: #fff; 
+        
     }
 
     th[scope="col"] {
-        background-color: #696969;
-        color: #fff;
+        background-color: purple;
+        color: black;;
     }
 
 
@@ -50,7 +62,12 @@
     
     .reglog{
       float: right;
-      margin-top: 50px
+      margin-top: 39px
+    }
+
+    .tournament li:first-child{
+      color: blue;
+
     }
 
   </style>
@@ -60,6 +77,14 @@
     <img src="https://ugc.futurelearn.com/uploads/images/03/d4/hero_03d40e20-30e1-4a97-9b5f-31c8b64bc827.png" alt="logo">
 
     <div class="reglog">
+      <div class="theme" >
+        <select name="theme" id="theme" >
+          <option value="dark" >dark</option>
+          <option value="colrful" >colorful</option>
+          <option value="white" >white</option>
+          
+      </select>
+      </div>
       <a href="/page2.html">Registration</a>
       |
       <a href="/page3.html">Log in</a>
@@ -100,7 +125,7 @@
     </table>
     <h1>Tournaments</h1>
 
-    <ul>
+    <ul class="tournament">
       <li>Contest Div1</li>
       <li>Contest Div2</li>
       <li>Contest Div3</li>
