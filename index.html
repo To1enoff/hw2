@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="main.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="icon" href="https://codeforces.org/s/0/android-icon-192x192.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://codeforces.org/s/0/android-icon-192x192.png" type="image/x-icon">
+
+  <title>Institute of Coding</title>
   <style>
+    
     img {
         height: 65px;
     }
-    @media (#theme: dark){
-        body{
-          background-color: black;
-        }
-    } 
 
     td,
     th {
@@ -62,7 +62,7 @@
     
     .reglog{
       float: right;
-      margin-top: 39px
+      margin-top: 55px
     }
 
     .tournament li:first-child{
@@ -71,19 +71,27 @@
     }
 
   </style>
+  <div class="sidenav">
+    <a href="#taskpage">Taskpage</a>
+    <a href="#tour">Tournament</a>
+    <a href="#leader">Leaders</a>
+    <a href="#task">Top Tasks</a>
+    <a href="#targettext">Target</a>
+  </div>
 </head>
 <body>
+  
   <thead>
     <img src="https://ugc.futurelearn.com/uploads/images/03/d4/hero_03d40e20-30e1-4a97-9b5f-31c8b64bc827.png" alt="logo">
 
     <div class="reglog">
       <div class="theme" >
-        <select name="theme" id="theme" >
+        <!-- <select name="theme" id="theme" >
           <option value="dark" >dark</option>
           <option value="colrful" >colorful</option>
           <option value="white" >white</option>
           
-      </select>
+      </select> -->
       </div>
       <a href="/page2.html">Registration</a>
       |
@@ -93,10 +101,10 @@
     <hr>
     
   </thead>
-  <tbody>
+  <tbody style="margin-left: 150px">
     <table>
       <table>
-        <caption>Task page</caption>
+        <caption id="taskpage">Task page</caption>
         <tr>
             <th scope="col">task</th>
             <th scope="col">complexity</th>
@@ -123,7 +131,7 @@
           <td>3,675</td>
         </tr>
     </table>
-    <h1>Tournaments</h1>
+    <h1 id="tour">Tournaments</h1>
 
     <ul class="tournament">
       <li>Contest Div1</li>
@@ -134,9 +142,9 @@
     </ul>
     <hr>
 
-    <h1>Leaders(rating)</h1>
+    <h1 id="leader">Leaders(rating)</h1>
 
-    <ol>
+    <ol id="leaders">
       <li>tourist</li>
       <li>jiangly</li>
       <li>ksun48</li>
@@ -148,10 +156,9 @@
       <li>cnnfls_csy</li>
       
     </ol>
-    <hr>
-     
-    <h1>Top Tasks of this week</h1>
-    <dl>
+    
+    <h1 id="task">Top Tasks of this week</h1>
+    <dl id="tasks">
       <dt>Chess</dt>
       <dd>You should find may horse get second one</dd>
       <dt>Statistics</dt>
@@ -159,6 +166,46 @@
       <dt>Painter</dt>
       <dd>You are given area of picture and area of painted side, you should find area that need to paint</dd>
     </dl>
+    <h1 id="targettext">Target text</h1>
+    <ul>
+      <li><a href="#example1">Lorem</a></li>
+      <li><a href="#example2">Cras</a></li>
+      <li><a href="#example3">Cras&Lorem</a></li>
+    </ul>
+    
+    <div class="lightbox" id="example1">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis enim,
+          placerat id eleifend eu, semper vel sem.
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div class="lightbox" id="example2">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption>
+          Cras risus odio, pharetra nec ultricies et, mollis ac augue. Nunc et diam
+          quis sapien dignissim auctor. Quisque quis neque arcu, nec gravida magna.
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div class="lightbox" id="example3">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption>
+          Cras risus odio, pharetra nec ultricies et, mollis ac augue. Nunc et diam
+          quis sapien dignissim auctor. Quisque quis neque arcu, nec gravida magna.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit facilis magnam nemo quaerat. Ut mollitia expedita exercitationem ratione obcaecati!
+        </figcaption>
+      </figure>
+    </div>
+
+
+
 
   </tbody>
   
