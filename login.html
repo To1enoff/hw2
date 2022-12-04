@@ -45,24 +45,20 @@
     </style>
   </head>
   <body>
-    <a href="index.html"><img src="https://ugc.futurelearn.com/uploads/images/03/d4/hero_03d40e20-30e1-4a97-9b5f-31c8b64bc827.png" alt="logo" style="height:65px"></a>
-
+    <a href="main.html"><img src="https://ugc.futurelearn.com/uploads/images/03/d4/hero_03d40e20-30e1-4a97-9b5f-31c8b64bc827.png" alt="logo" style="height:65px"></a>
     <nav>
-      <a href="page2.html">Registration</a>
-      <a href="page3.html" aria-current="page">Log in</a>
+      <a href="registration.html">Registration</a>
+      <a href="login.html" aria-current="page">Log in</a>
     </nav>
     <main>
       <div class="login">
-        <form>
-            <tbody>
-              <fieldset style="border: 2px solid green">
-                <legend>Your datas</legend>
-                <label for="email"><input type="email" id="email" name="email" placeholder="enter your email"></label>
-                <label for="password"><input type="password" id="password" name="password" placeholder="enter your password"</label>
-                </fieldset>
-              
-          </tbody>
-          <input type="button" onclick="location.href='index.html'" value="Log in" style="font-size: 24px"/>
+        <form action="index.html" >
+          <fieldset style="border: 2px solid green">
+            <legend>Your datas</legend>
+            <label for="email"><input type="email" id="email" name="email" placeholder="enter your email" required></label>
+            <label for="password"><input type="password" id="password" name="password" placeholder="enter your password" required></label>
+          </fieldset>
+          <button>log in</button>
         </form>
       </div>
       <div class="registrationimage">
